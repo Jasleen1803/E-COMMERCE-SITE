@@ -1,4 +1,6 @@
   VelvetLane - E-Commerce Fashion Website
+  Live demo:
+  https://e-commerce-site-9joo.onrender.com
 
 **VelvetLane** is a fully responsive fashion-themed e-commerce website built using **Node.js**, **Express.js**, **EJS**, and **Bootstrap**. It showcases a multi-page layout with dynamic rendering using EJS templating.
 
