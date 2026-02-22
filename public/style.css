@@ -283,34 +283,69 @@ img {
 }
 
 .category-card {
-    position:relative;
-    border-radius:18px;
-    overflow:hidden;
-    aspect-ratio: 3 / 4;
+    position: relative;
+    border-radius: 18px;
+    overflow: hidden;
+    height: 400px;   /* fixed clean height */
 }
 
-.category-card img {
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    transition:.3s;
+.category-card {
+    position: relative;
+    border-radius: 18px;
+    overflow: hidden;
+    height: 400px;  /* desktop default */
 }
+
+@media (max-width: 768px) {
+    .category-card {
+        height: 300px;   /* smaller height for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .category-card {
+        height: 250px;   /* perfect height for mobile */
+    }
+}
+
+
+
+/* Clothing */
+.category-card:nth-child(1) img {
+    object-position: center 10%;
+}
+
+/* Sunglasses */
+.category-card:nth-child(2) img {
+    object-position: center 25%;
+}
+
+/* Bags */
+.category-card:nth-child(3) img {
+    object-position: center;
+}
+
+/* Heels */
+.category-card:nth-child(4) img {
+    object-position: center 10%;
+}
+
 
 .category-card:hover img {
     transform: scale(1.04);
 }
 
 .category-label {
-    position:absolute;
-    bottom:14px;
-    left:50%;
-    transform:translateX(-50%);
-    background:#fff;
-    padding:8px 16px;
-    border-radius:12px;
-    font-weight:600;
+    position: absolute;
+    bottom: 18px;
+    left: 18px;          /* keep safe distance from curved edge */
+    background: #fff;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 14px;
+    white-space: nowrap;
 }
-
 /* ================= */
 /* PRODUCTS */
 /* ================= */
